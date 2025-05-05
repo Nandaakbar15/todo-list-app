@@ -11,8 +11,8 @@ filter incompleted task : AFIF
 remove all task : AFIF
 create mark as completed by button : AFIF
 
-
 ## Task Division
-- Alice: Bug 1
-- Bob: Bug 2
-- Carol: Feature
+- Taufik : Bug 1
+- Judith: Bug 2 dan support fitur filter
+- Alvinda: Bug 3
+- Afif : Buat fitur Filter
