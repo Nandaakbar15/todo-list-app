@@ -6,6 +6,8 @@ function addTask() {
   const taskText = taskInput.value;
   if (taskText.trim() === "") return;
 
+  if (tasks.some(task => task.text === taskText)) return; // cegah duplikasi data
+
   const task = {
     text: taskText.trim(),
     completed: false,
@@ -22,7 +24,7 @@ function renderTasks() {
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
     li.textContent = task.text;
-    if (task.completed = false) { 
+    if (task.completed) {
       li.style.textDecoration = "line-through";
     }
 

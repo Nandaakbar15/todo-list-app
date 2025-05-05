@@ -2,7 +2,7 @@
 
 ## Bug Fixes
 1. kosongkan input setelah tambah task
-2. ...
+2. cegah duplikasi data
 
 ## New Feature: Filter Incomplete Tasks
 ...
