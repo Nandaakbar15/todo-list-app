@@ -6,7 +6,11 @@ function addTask() {
   const taskText = taskInput.value;
   if (taskText.trim() === "") return;
 
-  if (tasks.some(task => task.text === taskText)) return; // cegah duplikasi data
+  // Cegah Duplikasi Data
+  if (tasks.some(task => task.text === taskText)) {
+    alert("Task dengan isi yang sama sudah ada!");
+    return;
+  }
 
   const task = {
     text: taskText.trim(),
